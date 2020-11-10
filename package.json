@@ -1,0 +1,16 @@
+{
+  "name": "@project/root",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "yarn dev:frontend & yarn dev:dashboard",
+    "dev:frontend": "cd packages/frontend && yarn serve",
+    "dev:dashboard": "cd packages/dashboard && yarn serve"
+  }
+}
